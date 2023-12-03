@@ -1,0 +1,3 @@
+pydantic
+PyYAML==6.0
+superagi-tools==1.0.6

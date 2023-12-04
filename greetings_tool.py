@@ -10,11 +10,11 @@ class CreateMeeting(BaseTool):
     name: str = "Create webex meeting tool"
     args_schema: Type[BaseModel] = CreateMeetingInput
     description: str = "create a webex meeting and return meeting ID"
-    def _generate_token(self):
-        br_token = input("copy bearer token-  ")
-        self.put_tool_config('bearer_token', br_token)
+#    def _generate_token(self):
+#        br_token = input("copy bearer token-  ")
+#        self.put_tool_config('bearer_token', br_token)
     def _execute(self):
-        self._generate_token()
+#        self._generate_token()
         meetingID = None
         url = 'https://api.webex.com/v1/meetings'
         headers = {
